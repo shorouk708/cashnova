@@ -48,4 +48,17 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script> 
+   const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+
+const loginBtn = document.getElementById('login-btn');
+const logoutBtn = document.getElementById('logout-btn');
+
+loginBtn.addEventListener('click', () => {
+    signInWithPopup(auth, provider);
+});
+
+logoutBtn.addEventListener('click', () => {
+    signOut(auth);
+}); 
 </html>
