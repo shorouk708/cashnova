@@ -18,4 +18,27 @@
     <h1>Welcome to CashNova</h1>
     <p>Watch videos and ads to earn money.</p>
 </body>
+   <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBumd4e2kR9j6MZYF9ivOm-x3XxeGgzIqA",
+    authDomain: "cashnova-303b9.firebaseapp.com",
+    projectId: "cashnova-303b9",
+    storageBucket: "cashnova-303b9.firebasestorage.app",
+    messagingSenderId: "169618484485",
+    appId: "1:169618484485:web:9988e7f52b567a5da3db6c",
+    measurementId: "G-2SVXYMW35E"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script> 
 </html>
